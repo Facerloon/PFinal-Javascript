@@ -1,0 +1,242 @@
+.mainIndex {
+    text-align: center;
+    background-image: url(../Multimedia/index1.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    &__div {
+        margin-top: 20vh;
+
+        &__title {
+        color: white;
+        font-size: 5rem;
+        font-family: 'Corinthia', cursive;
+        }
+
+        &__title2 {
+        color: white;
+        font-size: 1.5rem;
+        transform: translateY(-2rem);
+        }
+
+        &__p1 {
+        color: white;
+        font-size: 2rem;
+        border-top: 2px solid white;
+        width: 10%;
+        padding-top: 2rem;
+        margin-left: 45%;
+        margin-right: auto;
+        }
+    }
+
+    
+}
+
+.sectionsIndex {
+    @include Flexbox(flex, row, space-evenly, center);
+    margin-top: 2vh;
+
+    &__div1 {
+        background-image: url(../Multimedia/div1.jpg);
+        background-size: cover;
+        @include Sizes(33.4%, 400px);
+
+        &__title {
+            text-decoration: none;
+            font-size: 4rem;
+            color: white;
+            border-bottom: white 3px solid;
+            padding-bottom: 1rem;
+            text-align: center;
+            width: 26%;
+            margin-top: 30%;
+            margin-bottom: auto;
+            margin-left: 35%;
+            margin-right: auto;
+
+            &__link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+
+    &__div2 {
+        background-image: url(../Multimedia/div2.jpg);
+        background-size: cover;
+        @include Sizes(33.3%, 400px);
+
+        &__title {
+            text-decoration: none;
+            font-size: 4rem;
+            color: white;
+            border-bottom: white 3px solid;
+            padding-bottom: 1rem;
+            text-align: center;
+            width: 26%;
+            margin-top: 30%;
+            margin-bottom: auto;
+            margin-left: 35%;
+            margin-right: auto;
+
+            &__link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    &__div3 {
+        background-image: url(../Multimedia/div3.jpg);
+        background-size: cover;
+        @include Sizes(33.3%, 400px);
+
+        &__title {
+            text-decoration: none;
+            font-size: 4rem;
+            color: white;
+            border-bottom: white 3px solid;
+            padding-bottom: 1rem;
+            text-align: center;
+            width: 26%;
+            margin-top: 30%;
+            margin-bottom: auto;
+            margin-left: 35%;
+            margin-right: auto;
+
+            &__link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+.corteIndex {
+    margin-top: 2vh;
+    background-color: white;
+    border: whitesmoke 2px solid;
+    height: 40vh;
+
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 10vh;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.sucursalesIndex {
+    @include Flexbox(flex, row, center, center);
+    height: 50vh;
+
+
+    &__div1 {
+        background-image: url(../Multimedia/sucursalesD1.jpg);
+        background-size: cover;
+        @include Sizes(33.3%, 400px);
+
+        &__title {
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: auto;
+            padding-top: 20%;
+        }
+
+        &__text {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: auto;
+        }
+    }
+
+    &__div2 {
+        background-image: url(../Multimedia/index2.jpg);
+        background-size: cover;
+        @include Sizes(33.3%, 400px);
+        padding-top: 10rem;
+
+        &__title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-left: 34%;
+            margin-right: auto;
+            color: white;
+            border-bottom: white 2px solid;
+            width: 33%;
+            padding: 1rem;
+        }
+
+        &__link {
+            font-size: 3rem;
+            font-weight: 900;
+            text-decoration: none;
+            margin-left: 43%;
+            margin-right: auto;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem;
+        }
+    }
+
+    &__div3 {
+        background-image: url(../Multimedia/sucursalesD3.jpg);
+        background-size: cover;
+        @include Sizes(33.3%, 400px);
+
+        &__title {
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: auto;
+            padding-top: 20%;
+        }
+
+        &__text {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: auto;
+        }
+
+        
+    }
+}
+
+.corteNosotros {
+    margin-top: 2vh;
+    background-color: white;
+    border: whitesmoke 2px solid;
+    height: 40vh;
+
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 10vh;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

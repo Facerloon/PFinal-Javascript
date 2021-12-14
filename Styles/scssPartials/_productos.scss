@@ -1,0 +1,174 @@
+
+.headerProd {
+    height: 20vh;
+    background-color: black;
+    @include Flexbox(flex, row, center, center);
+
+    &__title {
+        color: white;
+        font-size: 2rem;
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 7rem;    
+        
+        i {
+            transform: translateY(.5rem);
+        }
+    }
+
+    
+}
+
+
+.mainProd {
+    display: grid;
+    grid-template-areas: 
+    "productos productos carrito"
+    "productos productos carrito";
+
+    grid-template-columns: 36vw 36vw 26.6vw;
+    grid-template-rows: 48vh 48vh 30vh;
+
+    background-image: radial-gradient(white, whitesmoke, gray);
+
+
+    &__producto {
+        grid-area: productos;
+        @include Flexbox(flex, row, space-evenly, center);
+        flex-wrap: wrap;
+
+        &__card {
+            margin-top: 0vh;
+            margin-bottom: 2vh;
+            margin-right: 2vw;
+            background-color: whitesmoke;
+            border: black 2px solid;
+            border-radius: .5rem;
+            
+            @include Sizes(20%, 36vh);
+
+            &__title {
+                text-align: center;
+                font-size: 1.5rem;
+                color: black;
+            }
+
+            &__img {
+                @include Sizes(50%, 50%);
+                margin-left: 25%;
+                margin-right: auto;
+            }
+
+            &__precio {
+                text-align: center;
+                font-size: 1.4rem;
+                color: black;
+            }
+
+            &__boton {
+                color: white;
+                background-color:black;
+                font-size: 1.3rem;
+                margin-left: 35%;
+                margin-right: auto;
+                padding: 1rem 1rem;
+            }
+        }
+    }
+
+    &__prodCarrito {
+        background-color: white;
+        text-align: center;
+        min-height: 100vh;
+        max-height: fit-content;
+
+        &__title {
+            font-size: 3rem;
+            color: black;
+        }
+
+        &__table {
+            text-align: center;
+            margin-left: 12%;
+            margin-right: auto;
+            width: 80%;
+
+            &__head {
+
+                &__tr {
+                    
+                    &__td {
+                        font-size: 1.7rem;
+                        color: black;
+                    }
+                }
+            }
+
+            &__body {
+                height: 80vh;
+                max-height: fit-content;
+
+                &__tr {
+
+                    
+
+                    &__td {
+                        font-size: 1.5rem;
+                        color: black;
+
+                        &__img {
+                            @include Sizes(80px, 80px);
+                        }
+
+                        &__name {
+                            font-size: 1.5rem;
+                            color: black;
+                        }
+
+                        &__inp {
+                            @include Sizes(4rem , 2.5rem);
+                        }
+
+                        &__precio {
+                            font-size: 1.5rem;
+                            color: black;
+                        }
+
+                        &__button {
+                            color: white;
+                            background-color: black;
+                            font-size: 1.5rem;
+                        }
+
+                    }
+                    
+                }
+            }
+
+            &__footer {
+                &__tr {
+                    &__td {
+                        font-size: 1.7rem;
+
+                        p {
+                            display: inline;
+                        }
+
+                        &__button {
+                            color: white;
+                            background-color: black;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

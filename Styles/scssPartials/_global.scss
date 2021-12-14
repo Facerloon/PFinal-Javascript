@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Source+Sans+Pro:ital,wght@0,300;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+@mixin Sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin Flexbox($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+.iHeader {
+    height: 18vh;
+    @include Flexbox(flex, row, space-evenly, center);
+
+    &__nav {
+        width: 100%;
+        
+        
+
+        &__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+            
+
+            &__item {
+                font-size: 2rem;
+                display: inline;
+                margin-top: 2rem;
+
+                &__link {
+                    text-decoration: none;
+                    color: white;
+
+                    i {
+                        font-size: 8rem;
+                        color: white;
+                        margin-bottom: 0rem;
+                        transform:translateY(-2rem);
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.iFooter {
+    height: 55vh;
+    background-color: black;
+    text-align: center;
+
+    &__social {
+        width: 50%;
+        margin-left: 25.7%;
+        margin-right: auto;
+
+        &__link {
+            i {
+            font-size: 1.7rem;
+            margin-right: 1.2vw;
+            color: white;
+            text-align: center;
+            }
+        }
+
+        
+    }
+    
+    &__link {
+        text-decoration: none;
+        font-size: 7.5rem;
+        color: rgb(255, 255, 255);
+        
+        i {
+            margin: 0;
+            font-size: 7.5rem;
+            color: rgb(255, 255, 255);
+            transform:translateY(5rem);
+        }
+    }
+
+    &__title {
+        margin-top: 6vh;
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    &__contacto {
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    &__text2 {
+        margin-top: 18vh;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+}
